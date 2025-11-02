@@ -17,7 +17,7 @@ public class Main {
 
 
         System.out.println("Day1 of coding again with a Simple Calculator");
-        while (true) {
+//        while (true) {
             System.out.println("enter first number: ");
             double i = sc.nextDouble();
             System.out.println("enter second number: ");
@@ -41,7 +41,13 @@ public class Main {
             }
 
             System.out.println("Result: " + result);
-        }
+//        }
+
+        car mycar = new car("tata", "red", 0);
+        mycar.start();
+        mycar.accelerate(20);
+        mycar.displayInfo();
+        mycar.brake();
 
     }
 }
