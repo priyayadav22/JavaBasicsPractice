@@ -33,4 +33,31 @@ public class car{
         System.out.println("color: " + color);
         System.out.println("speed : " + speed + "km/h");
     }
+
+    public String getBrand(){
+        return brand;
+    }
+
+    public void setBrand(String brand){
+        this.brand= brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        if(speed <0){
+            System.out.println("Speed cant be negative");
+        }
+        this.speed = speed;
+    }
 }

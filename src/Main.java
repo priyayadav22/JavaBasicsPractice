@@ -18,36 +18,44 @@ public class Main {
 
         System.out.println("Day1 of coding again with a Simple Calculator");
 //        while (true) {
-            System.out.println("enter first number: ");
-            double i = sc.nextDouble();
-            System.out.println("enter second number: ");
-            double j = sc.nextDouble();
-            double result = 0;
-            System.out.println("choose an operation (+, -, *, %, /");
-            char operator = sc.next().charAt(0);
+        System.out.println("enter first number: ");
+        double i = sc.nextDouble();
+        System.out.println("enter second number: ");
+        double j = sc.nextDouble();
+        double result = 0;
+        System.out.println("choose an operation (+, -, *, %, /");
+        char operator = sc.next().charAt(0);
 
-            if (operator == '+') {
-                result = i + j;
-            } else if (operator == '-') {
-                result = i - j;
-            } else if (operator == '*') {
-                result = i * j;
-            } else if (operator == '/') {
-                result = j / i;
-            } else if (operator == '%') {
-                result = j % i;
-            } else {
-                System.out.println("Not able to recognize operator");
-            }
+        if (operator == '+') {
+            result = i + j;
+        } else if (operator == '-') {
+            result = i - j;
+        } else if (operator == '*') {
+            result = i * j;
+        } else if (operator == '/') {
+            result = j / i;
+        } else if (operator == '%') {
+            result = j % i;
+        } else {
+            System.out.println("Not able to recognize operator");
+        }
 
-            System.out.println("Result: " + result);
+        System.out.println("Result: " + result);
 //        }
 
         car mycar = new car("tata", "red", 0);
-        mycar.start();
-        mycar.accelerate(20);
-        mycar.displayInfo();
-        mycar.brake();
+//        mycar.start();
+//        mycar.accelerate(20);
+//        mycar.displayInfo();
+//        mycar.brake();
+        car mycar1 = new car("maruti", "pink", 10);
+        garage g = new garage("Priya testing garage");
+        g.addCar(mycar);
+        g.addCar(mycar1);
+        g.showCars();
+        g.removeCar("tata");
+        g.showCars();
+
 
     }
 }
